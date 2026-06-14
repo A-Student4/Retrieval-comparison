@@ -1,0 +1,184 @@
+{
+  "queries": [
+    {
+      "qid": "q1",
+      "so_id": 60819376,
+      "text": "FastAPI throws an error Error loading ASGI app Could not import module api",
+      "category": "lexical",
+      "category_note": "Verbatim error string — BM25 exact match should dominate",
+      "relevant_docs": ["tutorial__first-steps", "deployment__manually"],
+      "primary_doc": "tutorial__first-steps"
+    },
+    {
+      "qid": "q2",
+      "so_id": 59929028,
+      "text": "Python FastAPI error 422 with POST request when sending JSON data",
+      "category": "lexical",
+      "category_note": "Specific HTTP status code + exact framework terms present in docs",
+      "relevant_docs": ["tutorial__body", "tutorial__body-multiple-params"],
+      "primary_doc": "tutorial__body"
+    },
+    {
+      "qid": "q3",
+      "so_id": 65635346,
+      "text": "How can I enable CORS in FastAPI",
+      "category": "lexical",
+      "category_note": "CORS and CORSMiddleware appear verbatim in the dedicated docs page",
+      "relevant_docs": ["tutorial__cors"],
+      "primary_doc": "tutorial__cors"
+    },
+    {
+      "qid": "q4",
+      "so_id": 66362199,
+      "text": "What is the difference between Uvicorn and Gunicorn plus Uvicorn",
+      "category": "lexical",
+      "category_note": "Both tool names appear verbatim in the deployment docs",
+      "relevant_docs": ["deployment__server-workers", "deployment__manually"],
+      "primary_doc": "deployment__server-workers"
+    },
+    {
+      "qid": "q5",
+      "so_id": 68786428,
+      "text": "Setting favicon with FastAPI",
+      "category": "lexical",
+      "category_note": "Short precise query — favicon handling covered via static files and custom responses",
+      "relevant_docs": ["tutorial__static-files", "advanced__custom-response"],
+      "primary_doc": "tutorial__static-files"
+    },
+    {
+      "qid": "q6",
+      "so_id": 55873174,
+      "text": "How do I return an image in FastAPI",
+      "category": "mixed",
+      "category_note": "Return image is semantic but FileResponse and Response are lexical terms in docs",
+      "relevant_docs": ["advanced__custom-response", "advanced__response-directly"],
+      "primary_doc": "advanced__custom-response"
+    },
+    {
+      "qid": "q7",
+      "so_id": 65504438,
+      "text": "How to add both file and JSON body in a FastAPI POST request",
+      "category": "mixed",
+      "category_note": "UploadFile and File are lexical; multipart form interaction requires semantic bridge",
+      "relevant_docs": ["tutorial__request-forms-and-files", "tutorial__request-files"],
+      "primary_doc": "tutorial__request-forms-and-files"
+    },
+    {
+      "qid": "q8",
+      "so_id": 67699451,
+      "text": "Make every field as optional with Pydantic in FastAPI",
+      "category": "mixed",
+      "category_note": "Optional is lexical; the partial update pattern requires semantic understanding",
+      "relevant_docs": ["tutorial__body-updates", "tutorial__extra-models"],
+      "primary_doc": "tutorial__body-updates"
+    },
+    {
+      "qid": "q9",
+      "so_id": 64497615,
+      "text": "How to add a custom decorator to a FastAPI route",
+      "category": "mixed",
+      "category_note": "Decorator is lexical but how it interacts with dependency injection is semantic",
+      "relevant_docs": ["tutorial__dependencies__index", "tutorial__dependencies__classes-as-dependencies"],
+      "primary_doc": "tutorial__dependencies__index"
+    },
+    {
+      "qid": "q10",
+      "so_id": 63853813,
+      "text": "How to create routes with FastAPI within a class",
+      "category": "mixed",
+      "category_note": "Routes and class are lexical; the self injection pattern requires semantic bridge",
+      "relevant_docs": ["tutorial__dependencies__classes-as-dependencies", "tutorial__dependencies__index"],
+      "primary_doc": "tutorial__dependencies__classes-as-dependencies"
+    },
+    {
+      "qid": "q11",
+      "so_id": 62976648,
+      "text": "Architecture Flask vs FastAPI how does it deal with multiple requests",
+      "category": "semantic",
+      "category_note": "Architecture does not appear in docs; dense must bridge Flask comparison to concurrency model",
+      "relevant_docs": ["async", "deployment__server-workers"],
+      "primary_doc": "async"
+    },
+    {
+      "qid": "q12",
+      "so_id": 71435960,
+      "text": "What is the purpose of Uvicorn with FastAPI",
+      "category": "semantic",
+      "category_note": "Purpose does not appear in docs; dense must infer from functional descriptions",
+      "relevant_docs": ["deployment__manually", "deployment__index"],
+      "primary_doc": "deployment__manually"
+    },
+    {
+      "qid": "q13",
+      "so_id": 63270196,
+      "text": "How to do persistent database connection in FastAPI asyncpg connection pool",
+      "category": "semantic",
+      "category_note": "User says persistent connection; docs say lifespan events and connection pool setup",
+      "relevant_docs": ["advanced__events", "tutorial__sql-databases"],
+      "primary_doc": "advanced__events"
+    },
+    {
+      "qid": "q14",
+      "so_id": 61871147,
+      "text": "What are the advantages of using Depends in FastAPI over just calling a function",
+      "category": "semantic",
+      "category_note": "Advantages not in docs; requires semantic reasoning about dependency injection pattern",
+      "relevant_docs": ["tutorial__dependencies__index"],
+      "primary_doc": "tutorial__dependencies__index"
+    },
+    {
+      "qid": "q15",
+      "so_id": 65686318,
+      "text": "Sharing python objects across multiple workers in FastAPI",
+      "category": "semantic",
+      "category_note": "User says sharing objects; docs say external data stores and worker replication",
+      "relevant_docs": ["deployment__server-workers", "deployment__docker"],
+      "primary_doc": "deployment__server-workers"
+    },
+    {
+      "qid": "q16",
+      "so_id": 71516140,
+      "text": "FastAPI runs API calls in serial instead of parallel fashion",
+      "category": "hard",
+      "category_note": "HARD: user says serial/parallel; answer lives in async/await concurrency docs. No shared vocabulary.",
+      "relevant_docs": ["async"],
+      "primary_doc": "async"
+    },
+    {
+      "qid": "q17",
+      "so_id": 67599119,
+      "text": "FastAPI asynchronous background tasks blocks other requests",
+      "category": "hard",
+      "category_note": "HARD: user says blocks; doc answer is about CPU-bound tasks and run_in_threadpool. Vocabulary mismatch.",
+      "relevant_docs": ["async", "tutorial__background-tasks"],
+      "primary_doc": "async"
+    },
+    {
+      "qid": "q18",
+      "so_id": 63169865,
+      "text": "How to do multiprocessing in FastAPI CPU bound task",
+      "category": "hard",
+      "category_note": "HARD: user says multiprocessing module; docs answer uses ProcessPoolExecutor and run_in_threadpool",
+      "relevant_docs": ["async"],
+      "primary_doc": "async"
+    },
+    {
+      "qid": "q19",
+      "so_id": 65209934,
+      "text": "Pydantic enum field does not get converted to string serialization",
+      "category": "hard",
+      "category_note": "HARD: user says converted to string; doc answer involves use_enum_values config. Complete vocabulary mismatch.",
+      "relevant_docs": ["python-types", "tutorial__extra-data-types"],
+      "primary_doc": "python-types"
+    },
+    {
+      "qid": "q20",
+      "so_id": 64379089,
+      "text": "How to read body as any valid json including numbers strings booleans in FastAPI",
+      "category": "hard",
+      "category_note": "HARD: user says read body any valid JSON; answer is Body() with Any type annotation. Lexical retriever drowns in all body-related pages.",
+      "relevant_docs": ["tutorial__body-multiple-params", "tutorial__body"],
+      "primary_doc": "tutorial__body-multiple-params"
+    }
+  ]
+}

@@ -1,0 +1,1590 @@
+{
+  "corpus_stats": {
+    "n_chunks": 2095,
+    "n_pages": 56,
+    "source": "FastAPI official documentation (GitHub raw, master branch)"
+  },
+  "config_results": [
+    {
+      "config": "BM25",
+      "n_queries": 20,
+      "recall_at_5": 0.4,
+      "mrr_at_5": 0.36,
+      "p95_ms": 6.0,
+      "by_category": {
+        "lexical": {
+          "n": 5,
+          "recall": 0.2,
+          "mrr": 0.24
+        },
+        "mixed": {
+          "n": 5,
+          "recall": 0.4,
+          "mrr": 0.4
+        },
+        "semantic": {
+          "n": 5,
+          "recall": 0.5,
+          "mrr": 0.467
+        },
+        "hard": {
+          "n": 5,
+          "recall": 0.5,
+          "mrr": 0.333
+        }
+      },
+      "per_query": [
+        {
+          "qid": "q1",
+          "text": "FastAPI throws an error Error loading ASGI app Could not import module api",
+          "category": "lexical",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 8.03,
+          "p95_ms": 5.6,
+          "top5_docs": [
+            "tutorial__testing",
+            "tutorial__bigger-applications",
+            "tutorial__handling-errors"
+          ],
+          "relevant": [
+            "tutorial__first-steps",
+            "deployment__manually"
+          ]
+        },
+        {
+          "qid": "q2",
+          "text": "Python FastAPI error 422 with POST request when sending JSON data",
+          "category": "lexical",
+          "recall": 0.5,
+          "mrr": 1.0,
+          "latency_ms": 5.08,
+          "p95_ms": 4.56,
+          "top5_docs": [
+            "tutorial__body",
+            "tutorial__handling-errors",
+            "tutorial__first-steps"
+          ],
+          "relevant": [
+            "tutorial__body",
+            "tutorial__body-multiple-params"
+          ]
+        },
+        {
+          "qid": "q3",
+          "text": "How can I enable CORS in FastAPI",
+          "category": "lexical",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 3.45,
+          "p95_ms": 3.21,
+          "top5_docs": [
+            "tutorial__middleware",
+            "advanced__middleware",
+            "deployment__https",
+            "deployment__server-workers"
+          ],
+          "relevant": [
+            "tutorial__cors"
+          ]
+        },
+        {
+          "qid": "q4",
+          "text": "What is the difference between Uvicorn and Gunicorn plus Uvicorn",
+          "category": "lexical",
+          "recall": 0.5,
+          "mrr": 0.2,
+          "latency_ms": 4.9,
+          "p95_ms": 4.43,
+          "top5_docs": [
+            "deployment__docker",
+            "async",
+            "deployment__manually"
+          ],
+          "relevant": [
+            "deployment__server-workers",
+            "deployment__manually"
+          ]
+        },
+        {
+          "qid": "q5",
+          "text": "Setting favicon with FastAPI",
+          "category": "lexical",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 2.33,
+          "p95_ms": 2.07,
+          "top5_docs": [
+            "deployment__server-workers",
+            "tutorial__request-files",
+            "tutorial__response-model",
+            "tutorial__header-params",
+            "advanced__settings"
+          ],
+          "relevant": [
+            "tutorial__static-files",
+            "advanced__custom-response"
+          ]
+        },
+        {
+          "qid": "q6",
+          "text": "How do I return an image in FastAPI",
+          "category": "mixed",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 3.74,
+          "p95_ms": 3.57,
+          "top5_docs": [
+            "deployment__docker",
+            "deployment__server-workers",
+            "deployment__https"
+          ],
+          "relevant": [
+            "advanced__custom-response",
+            "advanced__response-directly"
+          ]
+        },
+        {
+          "qid": "q7",
+          "text": "How to add both file and JSON body in a FastAPI POST request",
+          "category": "mixed",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "latency_ms": 6.29,
+          "p95_ms": 5.47,
+          "top5_docs": [
+            "tutorial__request-files",
+            "tutorial__body",
+            "tutorial__request-forms-and-files",
+            "tutorial__body-multiple-params"
+          ],
+          "relevant": [
+            "tutorial__request-forms-and-files",
+            "tutorial__request-files"
+          ]
+        },
+        {
+          "qid": "q8",
+          "text": "Make every field as optional with Pydantic in FastAPI",
+          "category": "mixed",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 4.42,
+          "p95_ms": 4.23,
+          "top5_docs": [
+            "index",
+            "tutorial__schema-extra-example",
+            "tutorial__body-multiple-params",
+            "tutorial__query-params"
+          ],
+          "relevant": [
+            "tutorial__body-updates",
+            "tutorial__extra-models"
+          ]
+        },
+        {
+          "qid": "q9",
+          "text": "How to add a custom decorator to a FastAPI route",
+          "category": "mixed",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 4.84,
+          "p95_ms": 7.24,
+          "top5_docs": [
+            "tutorial__dependencies__dependencies-in-path-operation-decorators",
+            "tutorial__handling-errors",
+            "tutorial__security__oauth2-jwt",
+            "advanced__middleware"
+          ],
+          "relevant": [
+            "tutorial__dependencies__index",
+            "tutorial__dependencies__classes-as-dependencies"
+          ]
+        },
+        {
+          "qid": "q10",
+          "text": "How to create routes with FastAPI within a class",
+          "category": "mixed",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "latency_ms": 4.4,
+          "p95_ms": 4.33,
+          "top5_docs": [
+            "tutorial__dependencies__index",
+            "tutorial__dependencies__classes-as-dependencies",
+            "tutorial__bigger-applications"
+          ],
+          "relevant": [
+            "tutorial__dependencies__classes-as-dependencies",
+            "tutorial__dependencies__index"
+          ]
+        },
+        {
+          "qid": "q11",
+          "text": "Architecture Flask vs FastAPI how does it deal with multiple requests",
+          "category": "semantic",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 5.57,
+          "p95_ms": 4.87,
+          "top5_docs": [
+            "tutorial__bigger-applications",
+            "tutorial__response-model",
+            "tutorial__testing"
+          ],
+          "relevant": [
+            "async",
+            "deployment__server-workers"
+          ]
+        },
+        {
+          "qid": "q12",
+          "text": "What is the purpose of Uvicorn with FastAPI",
+          "category": "semantic",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 4.21,
+          "p95_ms": 3.6,
+          "top5_docs": [
+            "tutorial__debugging",
+            "tutorial__dependencies__classes-as-dependencies",
+            "deployment__docker"
+          ],
+          "relevant": [
+            "deployment__manually",
+            "deployment__index"
+          ]
+        },
+        {
+          "qid": "q13",
+          "text": "How to do persistent database connection in FastAPI asyncpg connection pool",
+          "category": "semantic",
+          "recall": 0.5,
+          "mrr": 1.0,
+          "latency_ms": 5.43,
+          "p95_ms": 4.67,
+          "top5_docs": [
+            "advanced__events",
+            "deployment__https"
+          ],
+          "relevant": [
+            "advanced__events",
+            "tutorial__sql-databases"
+          ]
+        },
+        {
+          "qid": "q14",
+          "text": "What are the advantages of using Depends in FastAPI over just calling a function",
+          "category": "semantic",
+          "recall": 1.0,
+          "mrr": 0.333,
+          "latency_ms": 6.6,
+          "p95_ms": 6.0,
+          "top5_docs": [
+            "tutorial__request-files",
+            "tutorial__handling-errors",
+            "tutorial__dependencies__index",
+            "advanced__custom-response",
+            "tutorial__dependencies__classes-as-dependencies"
+          ],
+          "relevant": [
+            "tutorial__dependencies__index"
+          ]
+        },
+        {
+          "qid": "q15",
+          "text": "Sharing python objects across multiple workers in FastAPI",
+          "category": "semantic",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "latency_ms": 3.72,
+          "p95_ms": 3.32,
+          "top5_docs": [
+            "deployment__server-workers",
+            "deployment__docker",
+            "tutorial__background-tasks"
+          ],
+          "relevant": [
+            "deployment__server-workers",
+            "deployment__docker"
+          ]
+        },
+        {
+          "qid": "q16",
+          "text": "FastAPI runs API calls in serial instead of parallel fashion",
+          "category": "hard",
+          "recall": 1.0,
+          "mrr": 0.333,
+          "latency_ms": 4.78,
+          "p95_ms": 4.28,
+          "top5_docs": [
+            "tutorial__middleware",
+            "index",
+            "async",
+            "tutorial__testing"
+          ],
+          "relevant": [
+            "async"
+          ]
+        },
+        {
+          "qid": "q17",
+          "text": "FastAPI asynchronous background tasks blocks other requests",
+          "category": "hard",
+          "recall": 0.5,
+          "mrr": 0.333,
+          "latency_ms": 3.67,
+          "p95_ms": 3.01,
+          "top5_docs": [
+            "tutorial__middleware",
+            "tutorial__background-tasks"
+          ],
+          "relevant": [
+            "async",
+            "tutorial__background-tasks"
+          ]
+        },
+        {
+          "qid": "q18",
+          "text": "How to do multiprocessing in FastAPI CPU bound task",
+          "category": "hard",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "latency_ms": 4.42,
+          "p95_ms": 4.98,
+          "top5_docs": [
+            "async"
+          ],
+          "relevant": [
+            "async"
+          ]
+        },
+        {
+          "qid": "q19",
+          "text": "Pydantic enum field does not get converted to string serialization",
+          "category": "hard",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 4.89,
+          "p95_ms": 4.28,
+          "top5_docs": [
+            "tutorial__handling-errors",
+            "tutorial__path-params",
+            "tutorial__testing"
+          ],
+          "relevant": [
+            "python-types",
+            "tutorial__extra-data-types"
+          ]
+        },
+        {
+          "qid": "q20",
+          "text": "How to read body as any valid json including numbers strings booleans in FastAPI",
+          "category": "hard",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.46,
+          "p95_ms": 5.78,
+          "top5_docs": [
+            "advanced__settings",
+            "advanced__path-operation-advanced-configuration",
+            "tutorial__query-params-str-validations",
+            "tutorial__path-params",
+            "advanced__events"
+          ],
+          "relevant": [
+            "tutorial__body-multiple-params",
+            "tutorial__body"
+          ]
+        }
+      ]
+    },
+    {
+      "config": "Dense",
+      "n_queries": 20,
+      "recall_at_5": 0.45,
+      "mrr_at_5": 0.313,
+      "p95_ms": 29.51,
+      "by_category": {
+        "lexical": {
+          "n": 5,
+          "recall": 0.4,
+          "mrr": 0.157
+        },
+        "mixed": {
+          "n": 5,
+          "recall": 0.5,
+          "mrr": 0.33
+        },
+        "semantic": {
+          "n": 5,
+          "recall": 0.4,
+          "mrr": 0.4
+        },
+        "hard": {
+          "n": 5,
+          "recall": 0.5,
+          "mrr": 0.367
+        }
+      },
+      "per_query": [
+        {
+          "qid": "q1",
+          "text": "FastAPI throws an error Error loading ASGI app Could not import module api",
+          "category": "lexical",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 28.67,
+          "p95_ms": 31.34,
+          "top5_docs": [
+            "advanced__middleware",
+            "tutorial__testing",
+            "tutorial__handling-errors"
+          ],
+          "relevant": [
+            "tutorial__first-steps",
+            "deployment__manually"
+          ]
+        },
+        {
+          "qid": "q2",
+          "text": "Python FastAPI error 422 with POST request when sending JSON data",
+          "category": "lexical",
+          "recall": 0.5,
+          "mrr": 0.333,
+          "latency_ms": 26.09,
+          "p95_ms": 28.31,
+          "top5_docs": [
+            "index",
+            "tutorial__handling-errors",
+            "tutorial__body",
+            "tutorial__request-files"
+          ],
+          "relevant": [
+            "tutorial__body",
+            "tutorial__body-multiple-params"
+          ]
+        },
+        {
+          "qid": "q3",
+          "text": "How can I enable CORS in FastAPI",
+          "category": "lexical",
+          "recall": 1.0,
+          "mrr": 0.25,
+          "latency_ms": 25.78,
+          "p95_ms": 25.93,
+          "top5_docs": [
+            "advanced__middleware",
+            "tutorial__middleware",
+            "tutorial__cors",
+            "advanced__response-headers"
+          ],
+          "relevant": [
+            "tutorial__cors"
+          ]
+        },
+        {
+          "qid": "q4",
+          "text": "What is the difference between Uvicorn and Gunicorn plus Uvicorn",
+          "category": "lexical",
+          "recall": 0.5,
+          "mrr": 0.2,
+          "latency_ms": 25.93,
+          "p95_ms": 25.87,
+          "top5_docs": [
+            "deployment__docker",
+            "tutorial__dependencies__classes-as-dependencies",
+            "deployment__manually"
+          ],
+          "relevant": [
+            "deployment__server-workers",
+            "deployment__manually"
+          ]
+        },
+        {
+          "qid": "q5",
+          "text": "Setting favicon with FastAPI",
+          "category": "lexical",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 26.62,
+          "p95_ms": 26.51,
+          "top5_docs": [
+            "features",
+            "tutorial__path-params",
+            "deployment__index"
+          ],
+          "relevant": [
+            "tutorial__static-files",
+            "advanced__custom-response"
+          ]
+        },
+        {
+          "qid": "q6",
+          "text": "How do I return an image in FastAPI",
+          "category": "mixed",
+          "recall": 0.5,
+          "mrr": 0.2,
+          "latency_ms": 29.55,
+          "p95_ms": 28.33,
+          "top5_docs": [
+            "deployment__docker",
+            "tutorial__testing",
+            "advanced__response-directly"
+          ],
+          "relevant": [
+            "advanced__custom-response",
+            "advanced__response-directly"
+          ]
+        },
+        {
+          "qid": "q7",
+          "text": "How to add both file and JSON body in a FastAPI POST request",
+          "category": "mixed",
+          "recall": 0.5,
+          "mrr": 0.25,
+          "latency_ms": 26.48,
+          "p95_ms": 26.5,
+          "top5_docs": [
+            "advanced__middleware",
+            "tutorial__dependencies__dependencies-in-path-operation-decorators",
+            "tutorial__body-multiple-params",
+            "tutorial__request-files"
+          ],
+          "relevant": [
+            "tutorial__request-forms-and-files",
+            "tutorial__request-files"
+          ]
+        },
+        {
+          "qid": "q8",
+          "text": "Make every field as optional with Pydantic in FastAPI",
+          "category": "mixed",
+          "recall": 0.5,
+          "mrr": 0.2,
+          "latency_ms": 25.23,
+          "p95_ms": 26.23,
+          "top5_docs": [
+            "advanced__settings",
+            "index",
+            "tutorial__body-updates"
+          ],
+          "relevant": [
+            "tutorial__body-updates",
+            "tutorial__extra-models"
+          ]
+        },
+        {
+          "qid": "q9",
+          "text": "How to add a custom decorator to a FastAPI route",
+          "category": "mixed",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 24.75,
+          "p95_ms": 27.27,
+          "top5_docs": [
+            "advanced__middleware",
+            "tutorial__dependencies__dependencies-in-path-operation-decorators",
+            "tutorial__path-params-numeric-validations",
+            "tutorial__dependencies__global-dependencies",
+            "tutorial__handling-errors"
+          ],
+          "relevant": [
+            "tutorial__dependencies__index",
+            "tutorial__dependencies__classes-as-dependencies"
+          ]
+        },
+        {
+          "qid": "q10",
+          "text": "How to create routes with FastAPI within a class",
+          "category": "mixed",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "latency_ms": 26.05,
+          "p95_ms": 26.15,
+          "top5_docs": [
+            "tutorial__dependencies__index",
+            "advanced__middleware",
+            "tutorial__first-steps",
+            "tutorial__dependencies__classes-as-dependencies"
+          ],
+          "relevant": [
+            "tutorial__dependencies__classes-as-dependencies",
+            "tutorial__dependencies__index"
+          ]
+        },
+        {
+          "qid": "q11",
+          "text": "Architecture Flask vs FastAPI how does it deal with multiple requests",
+          "category": "semantic",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 25.53,
+          "p95_ms": 26.3,
+          "top5_docs": [
+            "tutorial__dependencies__dependencies-in-path-operation-decorators",
+            "tutorial__dependencies__global-dependencies",
+            "tutorial__response-model"
+          ],
+          "relevant": [
+            "async",
+            "deployment__server-workers"
+          ]
+        },
+        {
+          "qid": "q12",
+          "text": "What is the purpose of Uvicorn with FastAPI",
+          "category": "semantic",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 24.87,
+          "p95_ms": 26.44,
+          "top5_docs": [
+            "tutorial__dependencies__classes-as-dependencies",
+            "tutorial__debugging",
+            "async"
+          ],
+          "relevant": [
+            "deployment__manually",
+            "deployment__index"
+          ]
+        },
+        {
+          "qid": "q13",
+          "text": "How to do persistent database connection in FastAPI asyncpg connection pool",
+          "category": "semantic",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 27.15,
+          "p95_ms": 29.51,
+          "top5_docs": [
+            "tutorial__testing",
+            "async",
+            "deployment__https",
+            "advanced__middleware"
+          ],
+          "relevant": [
+            "advanced__events",
+            "tutorial__sql-databases"
+          ]
+        },
+        {
+          "qid": "q14",
+          "text": "What are the advantages of using Depends in FastAPI over just calling a function",
+          "category": "semantic",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "latency_ms": 25.09,
+          "p95_ms": 24.73,
+          "top5_docs": [
+            "tutorial__dependencies__index",
+            "tutorial__dependencies__sub-dependencies"
+          ],
+          "relevant": [
+            "tutorial__dependencies__index"
+          ]
+        },
+        {
+          "qid": "q15",
+          "text": "Sharing python objects across multiple workers in FastAPI",
+          "category": "semantic",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "latency_ms": 24.86,
+          "p95_ms": 24.59,
+          "top5_docs": [
+            "deployment__docker",
+            "deployment__server-workers"
+          ],
+          "relevant": [
+            "deployment__server-workers",
+            "deployment__docker"
+          ]
+        },
+        {
+          "qid": "q16",
+          "text": "FastAPI runs API calls in serial instead of parallel fashion",
+          "category": "hard",
+          "recall": 1.0,
+          "mrr": 0.333,
+          "latency_ms": 23.65,
+          "p95_ms": 27.57,
+          "top5_docs": [
+            "index",
+            "async",
+            "features",
+            "tutorial__body"
+          ],
+          "relevant": [
+            "async"
+          ]
+        },
+        {
+          "qid": "q17",
+          "text": "FastAPI asynchronous background tasks blocks other requests",
+          "category": "hard",
+          "recall": 0.5,
+          "mrr": 1.0,
+          "latency_ms": 25.24,
+          "p95_ms": 26.08,
+          "top5_docs": [
+            "tutorial__background-tasks",
+            "tutorial__middleware"
+          ],
+          "relevant": [
+            "async",
+            "tutorial__background-tasks"
+          ]
+        },
+        {
+          "qid": "q18",
+          "text": "How to do multiprocessing in FastAPI CPU bound task",
+          "category": "hard",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "latency_ms": 24.52,
+          "p95_ms": 25.52,
+          "top5_docs": [
+            "tutorial__testing",
+            "async"
+          ],
+          "relevant": [
+            "async"
+          ]
+        },
+        {
+          "qid": "q19",
+          "text": "Pydantic enum field does not get converted to string serialization",
+          "category": "hard",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 25.75,
+          "p95_ms": 25.14,
+          "top5_docs": [
+            "tutorial__testing",
+            "tutorial__handling-errors",
+            "tutorial__encoder"
+          ],
+          "relevant": [
+            "python-types",
+            "tutorial__extra-data-types"
+          ]
+        },
+        {
+          "qid": "q20",
+          "text": "How to read body as any valid json including numbers strings booleans in FastAPI",
+          "category": "hard",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 25.54,
+          "p95_ms": 27.41,
+          "top5_docs": [
+            "advanced__middleware",
+            "tutorial__middleware",
+            "tutorial__query-params-str-validations"
+          ],
+          "relevant": [
+            "tutorial__body-multiple-params",
+            "tutorial__body"
+          ]
+        }
+      ]
+    },
+    {
+      "config": "Hybrid",
+      "n_queries": 20,
+      "recall_at_5": 0.4,
+      "mrr_at_5": 0.396,
+      "p95_ms": 34.6,
+      "by_category": {
+        "lexical": {
+          "n": 5,
+          "recall": 0.4,
+          "mrr": 0.317
+        },
+        "mixed": {
+          "n": 5,
+          "recall": 0.5,
+          "mrr": 0.467
+        },
+        "semantic": {
+          "n": 5,
+          "recall": 0.4,
+          "mrr": 0.4
+        },
+        "hard": {
+          "n": 5,
+          "recall": 0.3,
+          "mrr": 0.4
+        }
+      },
+      "per_query": [
+        {
+          "qid": "q1",
+          "text": "FastAPI throws an error Error loading ASGI app Could not import module api",
+          "category": "lexical",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 33.35,
+          "p95_ms": 34.2,
+          "top5_docs": [
+            "tutorial__testing",
+            "advanced__middleware",
+            "tutorial__handling-errors",
+            "tutorial__bigger-applications"
+          ],
+          "relevant": [
+            "tutorial__first-steps",
+            "deployment__manually"
+          ]
+        },
+        {
+          "qid": "q2",
+          "text": "Python FastAPI error 422 with POST request when sending JSON data",
+          "category": "lexical",
+          "recall": 0.5,
+          "mrr": 1.0,
+          "latency_ms": 32.76,
+          "p95_ms": 32.9,
+          "top5_docs": [
+            "tutorial__body",
+            "tutorial__handling-errors",
+            "index"
+          ],
+          "relevant": [
+            "tutorial__body",
+            "tutorial__body-multiple-params"
+          ]
+        },
+        {
+          "qid": "q3",
+          "text": "How can I enable CORS in FastAPI",
+          "category": "lexical",
+          "recall": 1.0,
+          "mrr": 0.25,
+          "latency_ms": 29.71,
+          "p95_ms": 32.65,
+          "top5_docs": [
+            "advanced__middleware",
+            "tutorial__middleware",
+            "tutorial__cors",
+            "advanced__response-headers"
+          ],
+          "relevant": [
+            "tutorial__cors"
+          ]
+        },
+        {
+          "qid": "q4",
+          "text": "What is the difference between Uvicorn and Gunicorn plus Uvicorn",
+          "category": "lexical",
+          "recall": 0.5,
+          "mrr": 0.333,
+          "latency_ms": 32.95,
+          "p95_ms": 34.18,
+          "top5_docs": [
+            "deployment__docker",
+            "deployment__server-workers",
+            "benchmarks"
+          ],
+          "relevant": [
+            "deployment__server-workers",
+            "deployment__manually"
+          ]
+        },
+        {
+          "qid": "q5",
+          "text": "Setting favicon with FastAPI",
+          "category": "lexical",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 28.72,
+          "p95_ms": 30.0,
+          "top5_docs": [
+            "tutorial__request-files",
+            "features",
+            "deployment__server-workers",
+            "deployment__index"
+          ],
+          "relevant": [
+            "tutorial__static-files",
+            "advanced__custom-response"
+          ]
+        },
+        {
+          "qid": "q6",
+          "text": "How do I return an image in FastAPI",
+          "category": "mixed",
+          "recall": 0.5,
+          "mrr": 0.333,
+          "latency_ms": 30.97,
+          "p95_ms": 32.6,
+          "top5_docs": [
+            "deployment__docker",
+            "tutorial__testing",
+            "advanced__response-directly"
+          ],
+          "relevant": [
+            "advanced__custom-response",
+            "advanced__response-directly"
+          ]
+        },
+        {
+          "qid": "q7",
+          "text": "How to add both file and JSON body in a FastAPI POST request",
+          "category": "mixed",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "latency_ms": 34.62,
+          "p95_ms": 34.3,
+          "top5_docs": [
+            "tutorial__request-files",
+            "tutorial__body-multiple-params",
+            "tutorial__request-forms-and-files",
+            "tutorial__testing"
+          ],
+          "relevant": [
+            "tutorial__request-forms-and-files",
+            "tutorial__request-files"
+          ]
+        },
+        {
+          "qid": "q8",
+          "text": "Make every field as optional with Pydantic in FastAPI",
+          "category": "mixed",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 31.54,
+          "p95_ms": 32.52,
+          "top5_docs": [
+            "index",
+            "advanced__settings",
+            "tutorial__schema-extra-example",
+            "tutorial__response-model"
+          ],
+          "relevant": [
+            "tutorial__body-updates",
+            "tutorial__extra-models"
+          ]
+        },
+        {
+          "qid": "q9",
+          "text": "How to add a custom decorator to a FastAPI route",
+          "category": "mixed",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 31.43,
+          "p95_ms": 33.04,
+          "top5_docs": [
+            "advanced__middleware",
+            "tutorial__handling-errors",
+            "tutorial__dependencies__dependencies-in-path-operation-decorators",
+            "tutorial__security__oauth2-jwt"
+          ],
+          "relevant": [
+            "tutorial__dependencies__index",
+            "tutorial__dependencies__classes-as-dependencies"
+          ]
+        },
+        {
+          "qid": "q10",
+          "text": "How to create routes with FastAPI within a class",
+          "category": "mixed",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "latency_ms": 30.18,
+          "p95_ms": 33.16,
+          "top5_docs": [
+            "tutorial__dependencies__index",
+            "tutorial__dependencies__classes-as-dependencies",
+            "tutorial__first-steps"
+          ],
+          "relevant": [
+            "tutorial__dependencies__classes-as-dependencies",
+            "tutorial__dependencies__index"
+          ]
+        },
+        {
+          "qid": "q11",
+          "text": "Architecture Flask vs FastAPI how does it deal with multiple requests",
+          "category": "semantic",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 31.12,
+          "p95_ms": 31.77,
+          "top5_docs": [
+            "tutorial__response-model",
+            "tutorial__dependencies__dependencies-in-path-operation-decorators",
+            "tutorial__dependencies__global-dependencies",
+            "tutorial__testing"
+          ],
+          "relevant": [
+            "async",
+            "deployment__server-workers"
+          ]
+        },
+        {
+          "qid": "q12",
+          "text": "What is the purpose of Uvicorn with FastAPI",
+          "category": "semantic",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 30.71,
+          "p95_ms": 31.98,
+          "top5_docs": [
+            "tutorial__debugging",
+            "tutorial__dependencies__classes-as-dependencies",
+            "deployment__server-workers"
+          ],
+          "relevant": [
+            "deployment__manually",
+            "deployment__index"
+          ]
+        },
+        {
+          "qid": "q13",
+          "text": "How to do persistent database connection in FastAPI asyncpg connection pool",
+          "category": "semantic",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 32.13,
+          "p95_ms": 33.24,
+          "top5_docs": [
+            "tutorial__testing",
+            "deployment__https"
+          ],
+          "relevant": [
+            "advanced__events",
+            "tutorial__sql-databases"
+          ]
+        },
+        {
+          "qid": "q14",
+          "text": "What are the advantages of using Depends in FastAPI over just calling a function",
+          "category": "semantic",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "latency_ms": 34.51,
+          "p95_ms": 34.6,
+          "top5_docs": [
+            "tutorial__dependencies__index",
+            "tutorial__dependencies__sub-dependencies",
+            "tutorial__dependencies__classes-as-dependencies"
+          ],
+          "relevant": [
+            "tutorial__dependencies__index"
+          ]
+        },
+        {
+          "qid": "q15",
+          "text": "Sharing python objects across multiple workers in FastAPI",
+          "category": "semantic",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "latency_ms": 30.09,
+          "p95_ms": 30.2,
+          "top5_docs": [
+            "deployment__docker",
+            "deployment__server-workers"
+          ],
+          "relevant": [
+            "deployment__server-workers",
+            "deployment__docker"
+          ]
+        },
+        {
+          "qid": "q16",
+          "text": "FastAPI runs API calls in serial instead of parallel fashion",
+          "category": "hard",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 31.25,
+          "p95_ms": 31.75,
+          "top5_docs": [
+            "index",
+            "tutorial__body",
+            "features",
+            "tutorial__request-files"
+          ],
+          "relevant": [
+            "async"
+          ]
+        },
+        {
+          "qid": "q17",
+          "text": "FastAPI asynchronous background tasks blocks other requests",
+          "category": "hard",
+          "recall": 0.5,
+          "mrr": 1.0,
+          "latency_ms": 30.82,
+          "p95_ms": 31.87,
+          "top5_docs": [
+            "tutorial__background-tasks",
+            "tutorial__middleware"
+          ],
+          "relevant": [
+            "async",
+            "tutorial__background-tasks"
+          ]
+        },
+        {
+          "qid": "q18",
+          "text": "How to do multiprocessing in FastAPI CPU bound task",
+          "category": "hard",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "latency_ms": 31.88,
+          "p95_ms": 32.73,
+          "top5_docs": [
+            "async",
+            "tutorial__testing"
+          ],
+          "relevant": [
+            "async"
+          ]
+        },
+        {
+          "qid": "q19",
+          "text": "Pydantic enum field does not get converted to string serialization",
+          "category": "hard",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 31.21,
+          "p95_ms": 33.71,
+          "top5_docs": [
+            "tutorial__testing",
+            "tutorial__path-params",
+            "tutorial__encoder"
+          ],
+          "relevant": [
+            "python-types",
+            "tutorial__extra-data-types"
+          ]
+        },
+        {
+          "qid": "q20",
+          "text": "How to read body as any valid json including numbers strings booleans in FastAPI",
+          "category": "hard",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 32.84,
+          "p95_ms": 37.24,
+          "top5_docs": [
+            "tutorial__query-params-str-validations",
+            "advanced__middleware",
+            "advanced__path-operation-advanced-configuration",
+            "advanced__settings"
+          ],
+          "relevant": [
+            "tutorial__body-multiple-params",
+            "tutorial__body"
+          ]
+        }
+      ]
+    },
+    {
+      "config": "Reranker",
+      "n_queries": 20,
+      "recall_at_5": 0.225,
+      "mrr_at_5": 0.175,
+      "p95_ms": 73.55,
+      "by_category": {
+        "lexical": {
+          "n": 5,
+          "recall": 0.3,
+          "mrr": 0.1
+        },
+        "mixed": {
+          "n": 5,
+          "recall": 0.2,
+          "mrr": 0.2
+        },
+        "semantic": {
+          "n": 5,
+          "recall": 0.2,
+          "mrr": 0.2
+        },
+        "hard": {
+          "n": 5,
+          "recall": 0.2,
+          "mrr": 0.2
+        }
+      },
+      "per_query": [
+        {
+          "qid": "q1",
+          "text": "FastAPI throws an error Error loading ASGI app Could not import module api",
+          "category": "lexical",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 68.65,
+          "p95_ms": 71.4,
+          "top5_docs": [
+            "tutorial__bigger-applications",
+            "tutorial__testing",
+            "tutorial__handling-errors",
+            "advanced__middleware"
+          ],
+          "relevant": [
+            "tutorial__first-steps",
+            "deployment__manually"
+          ]
+        },
+        {
+          "qid": "q2",
+          "text": "Python FastAPI error 422 with POST request when sending JSON data",
+          "category": "lexical",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 69.41,
+          "p95_ms": 69.54,
+          "top5_docs": [
+            "tutorial__handling-errors",
+            "tutorial__path-params",
+            "tutorial__encoder"
+          ],
+          "relevant": [
+            "tutorial__body",
+            "tutorial__body-multiple-params"
+          ]
+        },
+        {
+          "qid": "q3",
+          "text": "How can I enable CORS in FastAPI",
+          "category": "lexical",
+          "recall": 1.0,
+          "mrr": 0.25,
+          "latency_ms": 65.25,
+          "p95_ms": 63.79,
+          "top5_docs": [
+            "tutorial__middleware",
+            "advanced__middleware",
+            "tutorial__cors",
+            "deployment__https"
+          ],
+          "relevant": [
+            "tutorial__cors"
+          ]
+        },
+        {
+          "qid": "q4",
+          "text": "What is the difference between Uvicorn and Gunicorn plus Uvicorn",
+          "category": "lexical",
+          "recall": 0.5,
+          "mrr": 0.25,
+          "latency_ms": 64.07,
+          "p95_ms": 66.96,
+          "top5_docs": [
+            "tutorial__dependencies__classes-as-dependencies",
+            "deployment__docker",
+            "deployment__manually",
+            "async"
+          ],
+          "relevant": [
+            "deployment__server-workers",
+            "deployment__manually"
+          ]
+        },
+        {
+          "qid": "q5",
+          "text": "Setting favicon with FastAPI",
+          "category": "lexical",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 61.81,
+          "p95_ms": 62.02,
+          "top5_docs": [
+            "features",
+            "tutorial__first-steps",
+            "python-types",
+            "deployment__index"
+          ],
+          "relevant": [
+            "tutorial__static-files",
+            "advanced__custom-response"
+          ]
+        },
+        {
+          "qid": "q6",
+          "text": "How do I return an image in FastAPI",
+          "category": "mixed",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 61.98,
+          "p95_ms": 68.24,
+          "top5_docs": [
+            "tutorial__bigger-applications",
+            "deployment__server-workers",
+            "deployment__docker",
+            "deployment__https"
+          ],
+          "relevant": [
+            "advanced__custom-response",
+            "advanced__response-directly"
+          ]
+        },
+        {
+          "qid": "q7",
+          "text": "How to add both file and JSON body in a FastAPI POST request",
+          "category": "mixed",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 71.07,
+          "p95_ms": 73.36,
+          "top5_docs": [
+            "advanced__middleware",
+            "tutorial__handling-errors",
+            "tutorial__body-multiple-params",
+            "tutorial__security__oauth2-jwt",
+            "deployment__docker"
+          ],
+          "relevant": [
+            "tutorial__request-forms-and-files",
+            "tutorial__request-files"
+          ]
+        },
+        {
+          "qid": "q8",
+          "text": "Make every field as optional with Pydantic in FastAPI",
+          "category": "mixed",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 66.55,
+          "p95_ms": 67.09,
+          "top5_docs": [
+            "index",
+            "advanced__settings"
+          ],
+          "relevant": [
+            "tutorial__body-updates",
+            "tutorial__extra-models"
+          ]
+        },
+        {
+          "qid": "q9",
+          "text": "How to add a custom decorator to a FastAPI route",
+          "category": "mixed",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 67.5,
+          "p95_ms": 73.55,
+          "top5_docs": [
+            "tutorial__dependencies__dependencies-in-path-operation-decorators",
+            "advanced__middleware",
+            "tutorial__handling-errors",
+            "tutorial__security__oauth2-jwt",
+            "tutorial__dependencies__global-dependencies"
+          ],
+          "relevant": [
+            "tutorial__dependencies__index",
+            "tutorial__dependencies__classes-as-dependencies"
+          ]
+        },
+        {
+          "qid": "q10",
+          "text": "How to create routes with FastAPI within a class",
+          "category": "mixed",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "latency_ms": 63.29,
+          "p95_ms": 65.68,
+          "top5_docs": [
+            "tutorial__dependencies__index",
+            "tutorial__middleware",
+            "tutorial__security__oauth2-jwt",
+            "tutorial__dependencies__classes-as-dependencies",
+            "tutorial__first-steps"
+          ],
+          "relevant": [
+            "tutorial__dependencies__classes-as-dependencies",
+            "tutorial__dependencies__index"
+          ]
+        },
+        {
+          "qid": "q11",
+          "text": "Architecture Flask vs FastAPI how does it deal with multiple requests",
+          "category": "semantic",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 66.51,
+          "p95_ms": 67.86,
+          "top5_docs": [
+            "tutorial__testing",
+            "tutorial__dependencies__dependencies-in-path-operation-decorators",
+            "tutorial__first-steps"
+          ],
+          "relevant": [
+            "async",
+            "deployment__server-workers"
+          ]
+        },
+        {
+          "qid": "q12",
+          "text": "What is the purpose of Uvicorn with FastAPI",
+          "category": "semantic",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 64.12,
+          "p95_ms": 64.52,
+          "top5_docs": [
+            "tutorial__dependencies__classes-as-dependencies",
+            "tutorial__debugging",
+            "benchmarks"
+          ],
+          "relevant": [
+            "deployment__manually",
+            "deployment__index"
+          ]
+        },
+        {
+          "qid": "q13",
+          "text": "How to do persistent database connection in FastAPI asyncpg connection pool",
+          "category": "semantic",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 65.71,
+          "p95_ms": 67.73,
+          "top5_docs": [
+            "tutorial__testing",
+            "advanced__middleware",
+            "tutorial__dependencies__index",
+            "tutorial__response-model",
+            "tutorial__middleware"
+          ],
+          "relevant": [
+            "advanced__events",
+            "tutorial__sql-databases"
+          ]
+        },
+        {
+          "qid": "q14",
+          "text": "What are the advantages of using Depends in FastAPI over just calling a function",
+          "category": "semantic",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 68.36,
+          "p95_ms": 74.08,
+          "top5_docs": [
+            "advanced__custom-response",
+            "tutorial__dependencies__classes-as-dependencies",
+            "tutorial__background-tasks",
+            "tutorial__request-files"
+          ],
+          "relevant": [
+            "tutorial__dependencies__index"
+          ]
+        },
+        {
+          "qid": "q15",
+          "text": "Sharing python objects across multiple workers in FastAPI",
+          "category": "semantic",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "latency_ms": 64.31,
+          "p95_ms": 66.42,
+          "top5_docs": [
+            "deployment__server-workers",
+            "deployment__docker"
+          ],
+          "relevant": [
+            "deployment__server-workers",
+            "deployment__docker"
+          ]
+        },
+        {
+          "qid": "q16",
+          "text": "FastAPI runs API calls in serial instead of parallel fashion",
+          "category": "hard",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 66.29,
+          "p95_ms": 67.81,
+          "top5_docs": [
+            "index",
+            "tutorial__query-params-str-validations",
+            "tutorial__body",
+            "advanced__custom-response"
+          ],
+          "relevant": [
+            "async"
+          ]
+        },
+        {
+          "qid": "q17",
+          "text": "FastAPI asynchronous background tasks blocks other requests",
+          "category": "hard",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "latency_ms": 60.51,
+          "p95_ms": 63.46,
+          "top5_docs": [
+            "tutorial__background-tasks",
+            "tutorial__middleware",
+            "async"
+          ],
+          "relevant": [
+            "async",
+            "tutorial__background-tasks"
+          ]
+        },
+        {
+          "qid": "q18",
+          "text": "How to do multiprocessing in FastAPI CPU bound task",
+          "category": "hard",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 64.65,
+          "p95_ms": 64.12,
+          "top5_docs": [
+            "tutorial__testing",
+            "advanced__middleware",
+            "tutorial__dependencies__index",
+            "tutorial__response-model",
+            "tutorial__background-tasks"
+          ],
+          "relevant": [
+            "async"
+          ]
+        },
+        {
+          "qid": "q19",
+          "text": "Pydantic enum field does not get converted to string serialization",
+          "category": "hard",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 68.29,
+          "p95_ms": 66.22,
+          "top5_docs": [
+            "tutorial__testing",
+            "tutorial__path-params",
+            "tutorial__handling-errors",
+            "tutorial__encoder"
+          ],
+          "relevant": [
+            "python-types",
+            "tutorial__extra-data-types"
+          ]
+        },
+        {
+          "qid": "q20",
+          "text": "How to read body as any valid json including numbers strings booleans in FastAPI",
+          "category": "hard",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 66.63,
+          "p95_ms": 70.53,
+          "top5_docs": [
+            "advanced__middleware",
+            "tutorial__query-params-str-validations",
+            "tutorial__middleware",
+            "advanced__path-operation-advanced-configuration"
+          ],
+          "relevant": [
+            "tutorial__body-multiple-params",
+            "tutorial__body"
+          ]
+        }
+      ]
+    }
+  ]
+}
